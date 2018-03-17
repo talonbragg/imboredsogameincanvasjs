@@ -1,6 +1,9 @@
 // This creates the canvas elements and sets the size
-var canvas = document.getElementById("myCanvas");
-var ctx = canvas.getContext("2d");
+function init() {
+canvas = document.getElementById("myCanvas");
+ctx = canvas.getContext("2d");
+return setInterval(draw, 10);
+}
 canvas.width = 500;
 canvas.height = 500;
 
@@ -32,7 +35,19 @@ background.onload = function() {
     ctx.beginPath();
     ctx.rect(0,0,WIDTH,HEIGHT);
     ctx.closePath();
-
+    
+    function clear() {
+        ctx.clearRect(0, 0, WIDTH, HEIGHT);
+    }
+    
+    function draw() {
+    clear();    
+    ctx.beginPath();
+    ctx.rect(x, y, 50, 50);
+    ctx.fillStyle = "white";
+    ctx.fill();
+    ctx.closePath();
+    }
         function doKeyDown(evt) {
         switch (evt.keyCode) {
             case 38:
@@ -61,5 +76,7 @@ background.onload = function() {
                 break;
         }
     }
+    
+    init();
     window.addEventListener('keydown', doKeyDown, true);
 }
