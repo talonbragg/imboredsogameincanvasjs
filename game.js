@@ -11,11 +11,13 @@ background.src = "img/Rectangle.png";
 
 // Make sure the image is loaded first otherwise nothing will draw.
 background.onload = function(){
-    ctx.drawImage(background,0,0);   
+    ctx.drawImage(background,0,0);  
+    
+    ctx.beginPath();
+    ctx.rect(50, 50, 50, 50);
+    ctx.fillStyle = "white";
+    ctx.fill();
+    ctx.closePath();
+
 }
 
-ctx.beginPath();
-ctx.rect(50, 50, 50, 50);
-ctx.fillStyle = "white";
-ctx.fill();
-ctx.closePath();
