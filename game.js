@@ -63,12 +63,12 @@ if (y + dy < HEIGHT){
 y += dy;
 }
 break;
-case 37:  /* Left arrow was pressed */
+case 39:  /* Left arrow was pressed */
 if (x - dx > 0){
 x -= dx;
 }
 break;
-case 39:  /* Right arrow was pressed */
+case 37:  /* Right arrow was pressed */
 if (x + dx < WIDTH){
 x += dx;
 }
