@@ -2,8 +2,8 @@
 
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
-canvas.width = 512;
-canvas.height = 480;
+canvas.width = 500;
+canvas.height = 500;
 
 // Background image
 var background = new Image();
