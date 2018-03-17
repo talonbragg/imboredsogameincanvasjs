@@ -13,3 +13,8 @@ background.src = "img/Rectangle.png";
 background.onload = function(){
     ctx.drawImage(background,0,0);   
 }
+
+ctx.rect(0, 0, 50, 50);
+ctx.stroke();
+ctx.fillStyle = "#FFFFFF";
+ctx.fill();
