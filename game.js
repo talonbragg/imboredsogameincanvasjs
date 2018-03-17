@@ -1,6 +1,6 @@
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
-return setInterval(draw, 10);
+setInterval(draw, 10);
 
 canvas.width = 500;
 canvas.height = 500;
