@@ -39,7 +39,7 @@ background.onload = function() {
     }
     
     function draw() {
-    clear();    
+//     clear();    
     ctx.beginPath();
     ctx.rect(x, y, 50, 50);
     ctx.fillStyle = "white";
