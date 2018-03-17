@@ -1,6 +1,6 @@
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
-setInterval(draw, 10);
+
 
 canvas.width = 500;
 canvas.height = 500;
@@ -10,11 +10,10 @@ var background = new Image();
 background.src = "img/Rectangle.png";
 
 
-
 // Make sure the image is loaded first otherwise nothing will draw.
 background.onload = function() {
 
-
+    setInterval(draw, 10);
     // Math to center the character
     x = 500 / 2 - 50 / 2;
     y = 500 / 2 - 50 / 2;
