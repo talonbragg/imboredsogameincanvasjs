@@ -49,7 +49,9 @@ background.src = "img/Rectangle.png";
     function draw() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         drawRect();
-        function doKeyDown(evt){
+    }
+    
+    function doKeyDown(evt){
 switch (evt.keyCode) {
 case 38:  /* Up arrow was pressed */
 if (y - dy > 0){
@@ -73,8 +75,6 @@ x += dx;
 break;
 }
 }
-    }
-    
     setInterval(draw, 10);
     window.addEventListener('keydown', doKeyDown, true);
 
