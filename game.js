@@ -38,13 +38,20 @@ background.onload = function() {
         ctx.clearRect(0, 0, WIDTH, HEIGHT);
     }
     
-    function draw() {
+    function drawRect() {
 //  clear();    
     ctx.beginPath();
     ctx.rect(x, y, 50, 50);
     ctx.fillStyle = "white";
     ctx.fill();
     ctx.closePath();
+    }
+    
+    function draw() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        drawRect();
+        x += dx;
+        y += dy;
     }
     
     setInterval(draw, 10);
