@@ -49,8 +49,6 @@ background.src = "img/Rectangle.png";
     function draw() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         drawRect();
-        x += dx;
-        y += dy;
         function doKeyDown(evt){
 switch (evt.keyCode) {
 case 38:  /* Up arrow was pressed */
