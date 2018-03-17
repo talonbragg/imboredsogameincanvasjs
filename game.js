@@ -12,4 +12,4 @@ var bgImage = new Image();
 bgImage.onload = function () {
 	bgReady = true;
 };
-bgImage.src = "img/";
+bgImage.src = "img/Readme.png";
