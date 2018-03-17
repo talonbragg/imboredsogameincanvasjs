@@ -14,6 +14,7 @@ background.onload = function(){
     ctx.drawImage(background,0,0);   
 }
 
+ctx.beginPath();
 ctx.rect(0, 0, 50, 50);
 ctx.stroke();
 ctx.fillStyle = "#FFFFFF";
