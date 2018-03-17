@@ -6,8 +6,8 @@ canvas.width = 512;
 canvas.height = 480;
 
 ctx.beginPath();
-ctx.rect(0, 0, 50, 50);
 ctx.fillStyle = "#FFFFFF";
+ctx.rect(0, 0, 50, 50);
 ctx.fill();
 
 // Background image
