@@ -6,9 +6,10 @@ canvas.width = 512;
 canvas.height = 480;
 
 ctx.beginPath();
-ctx.fillStyle = "#FFFFFF";
 ctx.rect(0, 0, 50, 50);
+ctx.fillStyle = "#FFFFFF";
 ctx.fill();
+ctx.closePath();
 
 // Background image
 var background = new Image();
