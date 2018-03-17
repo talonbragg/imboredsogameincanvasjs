@@ -14,17 +14,10 @@ background.src = "img/Rectangle.png";
 // Make sure the image is loaded first otherwise nothing will draw.
 background.onload = function(){
     
-    //Math to center the square
-    var startPosEq1 = 500;
-    var startPos = startPosEq1/2;
-    
-    
-    console.log(startPos);
-    
     ctx.drawImage(background,0,0);  
     
     ctx.beginPath();
-    ctx.rect(startPos, startPos, 50, 50);
+    ctx.rect(250, 250, 50, 50);
     ctx.fillStyle = "white";
     ctx.fill();
     ctx.closePath();
