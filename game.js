@@ -15,9 +15,9 @@ background.src = "img/Rectangle.png";
 background.onload = function(){
     
     //Math to center the square
-    var startPosEq1 = 500 + 500;
-    var startPosEq2 = startPosEq1/2;
-    var startPos = startPosEq2/2;
+    var startPosEq1 = 500;
+    var startPos = startPosEq1/2;
+    
     
     console.log(startPos);
     
