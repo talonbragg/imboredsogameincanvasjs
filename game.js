@@ -9,12 +9,20 @@ canvas.height = 480;
 var background = new Image();
 background.src = "img/Rectangle.png";
 
+
+
 // Make sure the image is loaded first otherwise nothing will draw.
 background.onload = function(){
+    
+    //Math to center the square
+    var startPosEq1 = 512 + 480;
+    var startPosEq2 = startPosEq1/2;
+    var startPos = startPosEq2/2;
+    
     ctx.drawImage(background,0,0);  
     
     ctx.beginPath();
-    ctx.rect(228, 228, 50, 50);
+    ctx.rect(startPos, startPos, 50, 50);
     ctx.fillStyle = "white";
     ctx.fill();
     ctx.closePath();
