@@ -1,7 +1,7 @@
 // This creates the canvas elements and sets the size
 function init() {
-canvas = document.getElementById("myCanvas");
-ctx = canvas.getContext("2d");
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
 return setInterval(draw, 10);
 }
 canvas.width = 500;
