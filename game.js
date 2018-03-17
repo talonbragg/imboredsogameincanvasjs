@@ -21,14 +21,6 @@ background.onload = function() {
 
     ctx.drawImage(background, 0, 0);
 
-    ctx.beginPath();
-    ctx.rect(x, y, 50, 50);
-    ctx.fillStyle = "white";
-    ctx.fill();
-    ctx.closePath();
-
-    ctx.clearRect(0, 0, 500, 500);
-
 
     function doKeyDown(evt) {
         switch (evt.keyCode) {
@@ -58,6 +50,13 @@ background.onload = function() {
                 break;
         }
     }
+    ctx.beginPath();
+    ctx.rect(x, y, 50, 50);
+    ctx.fillStyle = "white";
+    ctx.fill();
+    ctx.closePath();
+
+    ctx.clearRect(0, 0, 500, 500);
 
     window.addEventListener('keydown', doKeyDown, true);
 }
