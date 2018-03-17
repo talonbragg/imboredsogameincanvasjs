@@ -75,6 +75,5 @@ background.onload = function() {
         }
     }
     
-    init();
     window.addEventListener('keydown', doKeyDown, true);
 }
