@@ -31,53 +31,6 @@ background.onload = function() {
     ctx.fill();
     ctx.closePath();
 
-    function update() {
-    requestAnimationFrame(update);
-    
-    if (keys[38]) {
-        if (velY > -speed) {
-            velY--;
-        }
-    }
-    
-    if (keys[40]) {
-        if (velY < speed) {
-            velY++;
-        }
-    }
-    if (keys[39]) {
-        if (velX < speed) {
-            velX++;
-        }
-    }
-    if (keys[37]) {
-        if (velX > -speed) {
-            velX--;
-        }
-    }
-
-    velY *= friction;
-    y += velY;
-    velX *= friction;
-    x += velX;
-
-    if (x >= 295) {
-        x = 295;
-    } else if (x <= 5) {
-        x = 5;
-    }
-
-    if (y > 295) {
-        y = 295;
-    } else if (y <= 5) {
-        y = 5;
-    }
-        
-    ctx.clearRect(0, 0, 300, 300);    
-    }
-
-    update();
-
     document.body.addEventListener("keydown", function(e) {
         keys[e.keyCode] = true;
     });
