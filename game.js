@@ -10,8 +10,7 @@ var background = new Image();
 background.src = "img/Rectangle.png";
 
 
-// Make sure the image is loaded first otherwise nothing will draw.
-background.onload = function() {
+// Make sure the image is loaded first otherwise
 
     setInterval(draw, 10);
     // Math to center the character
@@ -56,4 +55,4 @@ background.onload = function() {
     
     setInterval(draw, 10);
     window.addEventListener('keydown', doKeyDown, true);
-}
+
