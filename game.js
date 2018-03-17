@@ -14,7 +14,7 @@ background.onload = function(){
     ctx.drawImage(background,0,0);  
     
     ctx.beginPath();
-    ctx.rect(200, 200, 50, 50);
+    ctx.rect(228, 228, 50, 50);
     ctx.fillStyle = "white";
     ctx.fill();
     ctx.closePath();
