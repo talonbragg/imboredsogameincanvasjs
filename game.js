@@ -16,8 +16,8 @@ background.src = "img/Rectangle.png";
     // Math to center the character
     x = 500 / 2 - 50 / 2;
     y = 500 / 2 - 50 / 2;
-    var dx = 5;
-    var dy = -5;
+    var dx = 1;
+    var dy = -1;
     var WIDTH = 500;
     var HEIGHT = 500;
 
