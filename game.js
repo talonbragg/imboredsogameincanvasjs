@@ -13,7 +13,7 @@ background.src = "img/Rectangle.png";
 // Make sure the image is loaded first otherwise nothing will draw.
 background.onload = function() {
 
-//     setInterval(draw, 10);
+    setInterval(draw, 1);
     // Math to center the character
     x = 500 / 2 - 50 / 2;
     y = 500 / 2 - 50 / 2;
