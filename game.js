@@ -27,8 +27,6 @@ background.onload = function() {
     ctx.fill();
     ctx.closePath();
 
-    ctx.clearRect(0, 0, 500, 500);
-
         function doKeyDown(evt) {
         switch (evt.keyCode) {
             case 38:
