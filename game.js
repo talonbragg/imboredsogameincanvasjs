@@ -28,6 +28,8 @@ background.onload = function() {
     ctx.fillStyle = "white";
     ctx.fill();
     ctx.closePath();
+    
+    rect(0,0,WIDTH,HEIGHT);
 
         function doKeyDown(evt) {
         switch (evt.keyCode) {
