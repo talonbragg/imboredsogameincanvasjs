@@ -6,9 +6,10 @@ canvas.width = 512;
 canvas.height = 480;
 
 // Background image
-var bgReady = false;
-var bgImage = new Image();
-bgImage.onload = function () {
-	bgReady = true;
-};
-bgImage.src = "img/Rectangle.png";
+var background = new Image();
+background.src = "img/Rectangle.png";
+
+// Make sure the image is loaded first otherwise nothing will draw.
+background.onload = function(){
+    ctx.drawImage(background,0,0);   
+}
