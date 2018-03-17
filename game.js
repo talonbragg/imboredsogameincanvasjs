@@ -16,13 +16,9 @@ background.onload = function() {
     // Math to center the character
     x = 500 / 2 - 50 / 2;
     y = 500 / 2 - 50 / 2;
-    
-    var velY = 0,
-    velX = 0,
-    speed = 2,
-    friction = 0.98,
-    keys = [];
-    
+    var dx = 5;
+    var dy = 5;
+
     ctx.drawImage(background, 0, 0);
 
     ctx.beginPath();
@@ -31,10 +27,37 @@ background.onload = function() {
     ctx.fill();
     ctx.closePath();
 
-    document.body.addEventListener("keydown", function(e) {
-        keys[e.keyCode] = true;
-    });
-    document.body.addEventListener("keyup", function(e) {
-        keys[e.keyCode] = false;
-    });
+    ctx.clearRect(0, 0, 500, 500);
+
+
+    function doKeyDown(evt) {
+        switch (evt.keyCode) {
+            case 38:
+                /* Up arrow was pressed */
+                if (y - dy > 0) {
+                    y -= dy;
+                }
+                break;
+            case 40:
+                /* Down arrow was pressed */
+                if (y + dy < HEIGHT) {
+                    y += dy;
+                }
+                break;
+            case 37:
+                /* Left arrow was pressed */
+                if (x - dx > 0) {
+                    x -= dx;
+                }
+                break;
+            case 39:
+                /* Right arrow was pressed */
+                if (x + dx < WIDTH) {
+                    x += dx;
+                }
+                break;
+        }
+    }
+
+    window.addEventListener('keydown', doKeyDown, true);
 }
