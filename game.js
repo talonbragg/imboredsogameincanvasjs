@@ -31,7 +31,7 @@ background.onload = function() {
     ctx.fill();
     ctx.closePath();
 
-    function(update) {
+    function update() {
     requestAnimationFrame(update);
     
     if (keys[38]) {
