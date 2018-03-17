@@ -19,6 +19,8 @@ background.onload = function(){
     var startPosEq2 = startPosEq1/2;
     var startPos = startPosEq2/2;
     
+    console.log(startPos);
+    
     ctx.drawImage(background,0,0);  
     
     ctx.beginPath();
