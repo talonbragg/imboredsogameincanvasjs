@@ -18,6 +18,8 @@ background.onload = function() {
     y = 500 / 2 - 50 / 2;
     var dx = 5;
     var dy = 5;
+    var WIDTH = 500;
+    var HEIGHT = 500;
 
     ctx.drawImage(background, 0, 0);
 
