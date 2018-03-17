@@ -29,7 +29,9 @@ background.onload = function() {
     ctx.fill();
     ctx.closePath();
     
-    rect(0,0,WIDTH,HEIGHT);
+    ctx.beginPath();
+    ctx.rect(0,0,WIDTH,HEIGHT);
+    ctx.closePath();
 
         function doKeyDown(evt) {
         switch (evt.keyCode) {
