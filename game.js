@@ -15,7 +15,7 @@ background.onload = function(){
 }
 
 ctx.beginPath();
-ctx.rect(0, 0, 50, 50);
+ctx.rect(50, 50, 50, 50);
 ctx.fillStyle = "white";
 ctx.fill();
 ctx.closePath();
