@@ -41,7 +41,7 @@ background.src = "img/Rectangle.png";
 //  clear();    
     ctx.beginPath();
     ctx.rect(x, y, 50, 50);
-    ctx.fillStyle = "white";
+    ctx.fillStyle = "black";
     ctx.fill();
     ctx.closePath();
     }
