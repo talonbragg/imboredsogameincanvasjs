@@ -6,13 +6,13 @@ canvas.width = 500;
 canvas.height = 500;
 
 // Background image
-// var background = new Image();
-// background.src = "img/Rectangle.png";
+var background = new Image();
+background.src = "img/Rectangle.png";
 
 
 // Make sure the image is loaded first otherwise
 
-
+setInterval(draw, 10);
 // Math to center the character
 x = 500 / 2 - 50 / 2;
 y = 500 / 2 - 50 / 2;
@@ -41,7 +41,7 @@ function drawRect() {
     //  clear();    
     ctx.beginPath();
     ctx.rect(x, y, 50, 50);
-    ctx.fillStyle = "white";
+    ctx.fillStyle = "black";
     ctx.fill();
     ctx.closePath();
 }
@@ -50,7 +50,7 @@ function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     drawRect();
 }
-function update() {
+
 function doKeyDown(evt) {
     switch (evt.keyCode) {
         case 38:
@@ -79,11 +79,5 @@ function doKeyDown(evt) {
             break;
     }
 }
-}
-function animate() {
-    requestAnimationFrame(animate);
-    draw();
-    update();
-}
-animate();
+setInterval(draw, 10);
 window.addEventListener('keydown', doKeyDown, true);
