@@ -26,16 +26,6 @@ var friction = 0.98;
 
 ctx.drawImage(background, 0, 0);
 
-ctx.beginPath();
-ctx.rect(x, y, 50, 50);
-ctx.fillStyle = "white";
-ctx.fill();
-ctx.closePath();
-
-ctx.beginPath();
-ctx.rect(0, 0, WIDTH, HEIGHT);
-ctx.closePath();
-
 function clear() {
     ctx.clearRect(0, 0, WIDTH, HEIGHT);
 }
