@@ -80,12 +80,10 @@ function doKeyDown(evt) {
     }
 }
 }
-var fps = 200;
-setInterval(function() {
+function animate() {
+    requestAnimationFrame(animate);
     update();
     draw();
-    }, 1000/fps)
-
-};
-
+}
+animate();
 window.addEventListener('keydown', doKeyDown, true);
