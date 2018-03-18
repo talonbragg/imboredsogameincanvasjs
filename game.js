@@ -82,8 +82,8 @@ function doKeyDown(evt) {
 }
 function animate() {
     requestAnimationFrame(animate);
-    update();
     draw();
+    update();
 }
 animate();
 window.addEventListener('keydown', doKeyDown, true);
