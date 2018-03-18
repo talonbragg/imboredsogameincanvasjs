@@ -20,6 +20,10 @@ var dx = -5;
 var dy = 5;
 var WIDTH = 500;
 var HEIGHT = 500;
+var speed = 2;
+var velY = 0;
+var velX = 0;
+var friction = 0.98;
 
 ctx.drawImage(background, 0, 0);
 
@@ -55,26 +59,26 @@ function doKeyDown(evt) {
     switch (evt.keyCode) {
         case 38:
             /* Up arrow was pressed */
-            if (y - dy > 0) {
-                y = dy--;
+            if (velY > -speed) {
+                velY--;
             }
             break;
         case 40:
             /* Down arrow was pressed */
-            if (y + dy < HEIGHT) {
-                y = dy++;
+            if (velY < speed) {
+               velY++; 
             }
             break;
         case 39:
             /* Left arrow was pressed */
-            if (x - dx > 0) {
-                x = dx--;
+            if (velX < speed) {
+               velX++;
             }
             break;
         case 37:
             /* Right arrow was pressed */
-            if (x + dx < WIDTH) {
-                x = dx++;
+            if (velX > -speed) {
+                velX--;
             }
             break;
     }
