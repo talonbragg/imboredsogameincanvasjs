@@ -68,13 +68,13 @@ function doKeyDown(evt) {
         case 39:
             /* Left arrow was pressed */
             if (x - dx > 0) {
-                x = --dx;
+                x = dx--;
             }
             break;
         case 37:
             /* Right arrow was pressed */
             if (x + dx < WIDTH) {
-                x = ++dx;
+                x = dx++;
             }
             break;
     }
