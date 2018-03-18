@@ -12,7 +12,6 @@ background.src = "img/Rectangle.png";
 
 // Make sure the image is loaded first otherwise
 
-setInterval(draw, 10);
 // Math to center the character
 x = 500 / 2 - 50 / 2;
 y = 500 / 2 - 50 / 2;
