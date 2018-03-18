@@ -41,7 +41,7 @@ function drawRect() {
     //  clear();    
     ctx.beginPath();
     ctx.rect(x, y, 50, 50);
-    ctx.fillStyle = "black";
+    ctx.fillStyle = "white";
     ctx.fill();
     ctx.closePath();
 }
