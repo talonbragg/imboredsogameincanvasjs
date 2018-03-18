@@ -56,25 +56,25 @@ function doKeyDown(evt) {
         case 38:
             /* Up arrow was pressed */
             if (y - dy > 0) {
-                y -= dy;
+                y--;
             }
             break;
         case 40:
             /* Down arrow was pressed */
             if (y + dy < HEIGHT) {
-                y += dy;
+                y++;
             }
             break;
         case 39:
             /* Left arrow was pressed */
             if (x - dx > 0) {
-                x -= dx;
+                x--;
             }
             break;
         case 37:
             /* Right arrow was pressed */
             if (x + dx < WIDTH) {
-                x += dx;
+                x++;
             }
             break;
     }
