@@ -6,8 +6,8 @@ canvas.width = 500;
 canvas.height = 500;
 
 // Background image
-var background = new Image();
-background.src = "img/Rectangle.png";
+// var background = new Image();
+// background.src = "img/Rectangle.png";
 
 
 // Make sure the image is loaded first otherwise
