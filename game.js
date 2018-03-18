@@ -60,24 +60,28 @@ function doKeyDown(evt) {
             /* Up arrow was pressed */
             if (velY > -speed) {
                 velY--;
+                console.log(velY);
             }
             break;
         case 40:
             /* Down arrow was pressed */
             if (velY < speed) {
-               velY++; 
+               velY++;
+               console.log(velY);
             }
             break;
         case 39:
             /* Left arrow was pressed */
             if (velX < speed) {
                velX++;
+               console.log(velX);
             }
             break;
         case 37:
             /* Right arrow was pressed */
             if (velX > -speed) {
                 velX--;
+                console.log(velX);
             }
             break;
     }
