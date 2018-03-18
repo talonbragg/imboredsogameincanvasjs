@@ -83,5 +83,11 @@ function doKeyDown(evt) {
             break;
     }
 }
+
+    velY *= friction;
+    y += velY;
+    velX *= friction;
+    x += velX;
+
 setInterval(draw, 10);
 window.addEventListener('keydown', doKeyDown, true);
